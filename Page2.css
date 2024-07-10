@@ -1,0 +1,118 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+/*navbar style starts*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(85, 248, 56);
+  font-size: 22px;
+  color: whitesmoke;
+  font-weight: 400;
+  /* google font */
+  font-family: "Baskervville SC", serif;
+  font-weight: 400;
+  font-style: normal;
+  /*google font*/
+  position: fixed;
+  width: 100%;
+  align-items: center;
+}
+
+.nav-brand {
+  font-weight: 700;
+  font-size: 1.563rem;
+}
+
+.navbar > .nav-link {
+  display: flex;
+  padding: 0.5%;
+  justify-content: space-between;
+  background-color: rgb(253, 26, 26);
+  width: 40%;
+}
+/*navbar style starts*/
+/*mainSection css starts*/
+.mainSection {
+  padding-top: 1.8rem;
+  background-image: url("../sudeep_2.jpeg");
+  height: 75vh;
+  background-position: center;
+  background-size: cover;
+}
+.mainSection > #main-sec-heading {
+  font-family: "Roboto", sans-serif;
+  font-size: 4rem;
+  text-align: center;
+  background: -webkit-linear-gradient(
+    rgba(255, 191, 0, 0.888),
+    rgba(234, 244, 55, 0.9)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.mainSection > #main-sec-heading > span {
+  background: -webkit-repeating-linear-gradient(
+    rgb(255, 255, 255),
+    rgb(245, 245, 17)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.mainSection > #mainPara {
+  font-family: "Roboto", sans-serif;
+  margin: auto;
+  padding: 0.9rem;
+  text-align: center;
+  color: pink;
+}
+/*travel section starts*/
+.travel-section {
+  padding: 1.5rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.travel-section > #travel-item {
+  width: auto;
+}
+#img-cont > img {
+  height: 12.5rem;
+  margin: 4rem;
+  width: 300px;
+}
+#travel-title > h4 {
+  font-family: "roboto", sans-serif;
+  font-size: 1rem;
+  text-align: center;
+}
+/*travel-section end*/
+
+/*media queries for responsive design*/
+@media screen and (max-width: 600px) {
+  .navbar {
+    justify-content: space-between;
+  }
+  .navbar > .nav-link {
+    display: block;
+    text-align: right;
+  }
+  .main-section {
+    display: relative;
+  }
+  .main-section > #main-sec-heading {
+    font-size: 2.5rem;
+  }
+  .main-section > #main-para {
+    font-size: 1rem;
+  }
+  .travel-section {
+    width: 50%;
+    grid-template-columns: auto;
+  }
+}
+/*media queries for responsive design*/
